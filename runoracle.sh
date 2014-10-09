@@ -7,6 +7,7 @@ HOME="$DIR/.."
 
 if [ -z $(pgrep bitcoind) ]
 then
+    export LC_ALL=C &&
     $HOME/bitcoin/bin/$(getconf LONG_BIT)/bitcoind -datadir=$HOME/.bitcoin/ -rpcport=2521 &
     sleep 2
 fi
