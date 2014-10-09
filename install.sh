@@ -34,7 +34,7 @@ then
     tar -C $HOME -zxvf $HOME/bitcoin-0.9.1-linux.tar.gz &&
     mv $HOME/bitcoin-0.9.1-linux $HOME/bitcoin &&
     rm $HOME/bitcoin-0.9.1-linux.tar.gz &&
-    echo 'alias bitcoind=~/bitcoin/bin/64/bitcoin' >> $HOME/.bash_aliases &&
+    echo 'alias bitcoind=~/bitcoin/bin/64/bitcoind' >> $HOME/.bash_aliases &&
     source $HOME/.bash_aliases &&
     
     cp $DIR/src/settings_local.py.example $DIR/src/settings_local.py
